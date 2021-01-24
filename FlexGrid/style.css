@@ -1,0 +1,221 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+}
+.home a{
+    text-decoration: none;
+    color: #004;
+}
+.home a:hover, a:visited, a:active, a:focus{
+    color: rgba(0, 0, 68, 0.8);
+}
+.link2 .fas{
+    margin-right: 7px;
+}
+.link2 a{
+    text-decoration: none;
+    /* color: aliceblue; */
+}
+.nav{
+    background-color: #2F3061;
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+    padding: 6px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.nav a{
+    color: aliceblue;
+}
+.nav:hover, .nav:visited, .nav:active, .nav:focus{
+    background: rgba(47,48,97,0.8);
+}
+.main{
+    background-color: #2F3061;
+    color:  aliceblue;
+    padding: 30px;
+    text-align: justify;
+}
+.logo-wrap{
+    display: flex;
+}
+.logo{
+    background-color: #004;
+    color:tomato;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+.logo:hover{
+    background: #2F3061;
+    transform: rotate(360deg);
+    transition: 3s;
+}
+.btn-wrap{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: #2F3061;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    border-bottom: 4px solid tomato;
+}
+.btn a{
+    text-decoration: none;
+    color: tomato;
+}
+.btn:hover, .btn:visited, .btn:active, .btn:focus{
+    border: 1px solid rgba(47,48,97,0.5);
+}
+.btn .fas{
+    margin-right: 7px;
+}
+.link-wrap{
+    padding: 0;
+}
+.link{
+    background-color:  tomato;
+    width: 200px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color:  aliceblue;
+}
+.link:hover, .link:visited, .link:active, .link:focus{
+    background: rgb(255, 99, 71, 0.9);
+}
+.link .fas{
+    margin-right: 7px;
+}
+.aside{
+    background-color: lightblue;
+    color: #004D;
+    padding: 30px;
+}
+.aside .fas{
+    margin-bottom: 15px;
+}
+.aside .fa-street-view{
+    margin-bottom: 0;
+    margin-right: 3px;
+}
+input{
+    display: flex;
+}
+.input{
+    background-color: lightblue;
+    color: aliceblue;
+    padding: 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid tomato;
+    margin-bottom: 0;
+}
+.form-wrap{
+    width: 200px;
+}
+.button-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.button{
+    background-color: lightblue;
+    color: #004;
+    border: none;
+    font-weight: bold;
+    /* border-bottom: 1px solid tomato; */
+}
+.button:hover{
+    /* border-bottom: 2px solid #92979D; */
+    color: rgb(0, 0, 68, 0.8);
+}
+footer{
+    text-align: center;
+    background-color: #343434;
+    color: aliceblue;
+    padding: 30px;  
+}
+.f-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.f-wrap a{
+    color: tomato;
+    font-size: 12px;
+}
+.f-wrap a:hover, a:visited, a:active, a:focus{
+    padding: 5px 0;
+    text-decoration: none;
+}
+@media (min-width: 600px){
+    .link2{
+        display: flex;
+    }
+    .btn-wrap{
+        display: flex;
+        justify-content: space-around;
+    }
+    .aside{
+        text-align: left;
+    }
+    .aside h3{
+        text-align: center;
+    }
+    .form-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .f-wrap{
+        display: flex;
+        justify-content: space-around;
+    } 
+    .f-wrap a{
+        color: aliceblue;
+        font-size: 15px;
+    } 
+}
+@media (min-width: 900px){
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .link{
+        background-color:  tomato;
+        width: 250px;
+    }
+    .button{
+        border-bottom: none;
+    }
+    .f-wrap{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .f-wrap a{
+        color: aliceblue;
+        font-size: 17px;
+    }
+}
